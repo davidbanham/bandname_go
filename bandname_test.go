@@ -10,3 +10,9 @@ func TestBandname(t *testing.T) {
 		fmt.Println(Bandname())
 	}
 }
+
+func TestBandemail(t *testing.T) {
+	for i := 0; i < 10; i++ {
+		fmt.Println(Bandemail())
+	}
+}

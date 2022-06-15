@@ -1,9 +1,11 @@
 package bandname
 
 import (
-	"github.com/dustinkirkland/golang-petname"
+	"fmt"
 	"math/rand"
 	"time"
+
+	petname "github.com/dustinkirkland/golang-petname"
 )
 
 func init() {
@@ -12,4 +14,8 @@ func init() {
 
 func Bandname() string {
 	return petname.Generate(2, "-")
+}
+
+func Bandemail() string {
+	return fmt.Sprintf("%s@example.com", Bandname())
 }
